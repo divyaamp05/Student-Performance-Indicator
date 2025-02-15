@@ -37,7 +37,7 @@ class PredictPipeline:
 
 
 class CustomData:
-    def __init__(self, gender, race_ethnicity, parental_level_of_education, lunch, test_preparation_course, math_score, reading_score, writing_score):
+    def __init__(self, gender, race_ethnicity, parental_level_of_education, lunch, test_preparation_course, reading_score, writing_score):
         
         self.gender = gender
 
@@ -48,8 +48,6 @@ class CustomData:
         self.lunch = lunch
 
         self.test_preparation_course = test_preparation_course
-
-        self.math_score = math_score
 
         self.reading_score = reading_score
         
@@ -63,7 +61,6 @@ class CustomData:
                 "parental_level_of_education": [self.parental_level_of_education],
                 "lunch": [self.lunch],
                 "test_preparation_course": [self.test_preparation_course],
-                "math_score": [self.math_score],
                 "reading_score": [self.reading_score],
                 "writing_score": [self.writing_score]
             }
