@@ -7,7 +7,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   color: #333;
 }
 
@@ -17,7 +16,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 800px;
-  width: 100%;
+  min-height: 200px;
+  width: 50%;
 }
 
 h1 {
@@ -51,12 +51,14 @@ form {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   color: #555;
   font-weight: 500;
@@ -79,16 +81,24 @@ form {
   outline: none;
 }
 
-/* Button */
+/* Button Card */
+.button-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
 #predict-btn {
-  display: block;
-  width: 100%;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -99,15 +109,20 @@ form {
   transform: translateY(-2px);
 }
 
+
 /* Result Card */
 .result-card {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   background-color: #f9f9f9;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 100%;
+  max-height: 100px;
 }
+
+
 
 .result-card h2 {
   margin-bottom: 0.5rem;
@@ -125,5 +140,8 @@ form {
 .error { /* Style for error messages */
   color: red;
   font-size: 1.1rem;
-  margin-top: 1rem; /* Add some spacing */
+  margin-top: 1rem; /* Add some spacing */
 }
+
+
+

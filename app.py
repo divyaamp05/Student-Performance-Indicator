@@ -36,7 +36,7 @@ def predictdata():
 
             return render_template('home.html', results=results[0])  
         
-        # Handle GET requests (initial page load)
+        # Handling GET requests (initial page load)
         return render_template('home.html')  
 
     except Exception as e:
@@ -45,4 +45,4 @@ def predictdata():
 
 
 if __name__ == '__main__':
-    app.run(port=5003, debug=True)
+    app.run(port=5001, debug=True)

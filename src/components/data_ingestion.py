@@ -1,5 +1,3 @@
-print("Starting data ingestion...")  # Add at the beginning
-
 import os
 import sys
 
@@ -74,7 +72,7 @@ if __name__ == "__main__":
 
     model_trainer = ModelTrainer()
     print(model_trainer.initiate_model_trainer(train_arr, test_arr, preprocessor_path)) 
-    print("Ending Model training...") 
+    
 
 
 
